@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>タスク管理</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>タスク一覧</h1>
+        <div class="header-bar"></div> </header>
+
+    <input type="text" id="newTask" placeholder="新しいタスク">
+    <button onclick="addTask()">追加</button>
+
+    <ul id="taskList"></ul>
+
+    <button onclick="downloadTasks()">タスクをダウンロード</button>
+    <input type="file" id="uploadFile" onchange="uploadTasks(event)" accept=".json">
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+    background-color: #000; /* 背景を黒に */
+    color: #fff; /* 文字を白に */
+    font-family: sans-serif; /* フォントを指定（見やすく） */
+    margin: 20px; /* 周囲の余白を調整 */
+    display: flex; /* Flexbox レイアウトを使用 */
+    flex-direction: column; /* 縦方向に要素を配置 */
+    align-items: center; /* 中央揃え */
+}
+
+header {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 20px; /* headerの下にマージンを追加 */
+}
+
+.header-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #fff; /* バーの色を白に */
+    margin-top: 10px;
+}
+
+h1 {
+    color: #eee; /* 見やすいように少し薄い白に */
+}
+
+input[type="text"], button {
+    padding: 10px;
+    margin: 5px;
+    border: none; /* ボーダーをなくす */
+    border-radius: 5px; /* 角を丸くする */
+    width: 80%;
+    max-width: 400px;
+    box-sizing: border-box; /* paddingとborderをwidthに含める */
+}
+button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer; /* カーソルをポインターに変更 */
+}
+button:hover{
+    background-color: #45a049; /* Green(hover時) */
+
+}
+
+ul {
+    width: 80%;
+    max-width: 400px;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #444; /* 区切り線を少し暗く */
+    display: flex;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888; /* 完了したタスクの色をさらに薄く */
+}
+
+li button{
+    margin-left: 10px;
+    width: auto;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+#uploadFile{
+    width: 80%;
+    max-width: 400px;
+    box-sizing: border-box; /* paddingとborderをwidthに含める */
+    margin-top: 10px;
+}
